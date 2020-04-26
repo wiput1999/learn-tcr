@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "runOnSave.commands": [
+    {
+      "match": ".*\\.py",
+      "command": "clear; python ${file} && git commit -am \":sparkles: working\" || git reset --hard"
+    }
+  ]
+}
