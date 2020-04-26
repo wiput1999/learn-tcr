@@ -13,3 +13,5 @@ class Student:
 
 
 assert str(Student("John", 80)) == "John"
+
+assert Student("John", 80).get_grade() == "A"
