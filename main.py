@@ -7,7 +7,7 @@ class Student:
         return self.name
 
     def get_grade(self):
-        if self.score >= 80 and self.score <= 100:
+        if self.score >= 80:
             return "A"
         if self.score >= 75:
             return "B+"
@@ -23,7 +23,6 @@ class Student:
             return "D"
         if self.score >= 0:
             return "F"
-        return Exception("Invalid Score")
 
 
 assert str(Student("John", 80)) == "John"
