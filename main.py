@@ -32,5 +32,6 @@ assert Student("John", 70).get_grade() == "B"
 assert Student("John", 65).get_grade() == "C+"
 assert Student("John", 60).get_grade() == "C"
 assert Student("John", 55).get_grade() == "D+"
+assert Student("John", 50).get_grade() == "D"
 
 assert Student("John", 49).get_grade() == "F"
