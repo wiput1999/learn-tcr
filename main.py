@@ -20,5 +20,6 @@ assert str(Student("John", 80)) == "John"
 
 assert Student("John", 80).get_grade() == "A"
 assert Student("John", 79).get_grade() == "B+"
+assert Student("John", 70).get_grade() == "B"
 
 assert Student("John", 49).get_grade() == "F"
