@@ -9,6 +9,8 @@ class Student:
     def get_grade(self):
         if self.score >= 80:
             return "A"
+        if self.score >= 75:
+            return "B+"
         return "F"
 
 
