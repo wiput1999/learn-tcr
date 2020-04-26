@@ -68,5 +68,10 @@ class StudentTest(unittest.TestCase):
             Student("John", 101)
         self.assertTrue(context.exception)
 
+    def test_score_error_low(self):
+        with self.assertRaises(Exception) as context:
+            Student("John", -1)
+        self.assertTrue(context.exception)
+
 
 unittest.main()
