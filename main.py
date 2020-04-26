@@ -11,6 +11,8 @@ class Student:
             return "A"
         if self.score >= 75:
             return "B+"
+        if self.score >= 70:
+            return "B"
         return "F"
 
 
