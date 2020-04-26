@@ -61,4 +61,4 @@ class StudentTest(unittest.TestCase):
         self.assertEqual(Student("John", 75).get_grade(), "B+")
 
 
-unittest.main(verbosity=True)
+unittest.main()
