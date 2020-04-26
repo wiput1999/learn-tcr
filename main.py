@@ -1,5 +1,7 @@
 class Student:
     def __init__(self, name, score):
+        if score < 0 or score > 100:
+            raise Exception("Invalid Score")
         self.name = name
         self.score = score
 
