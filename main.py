@@ -60,5 +60,8 @@ class StudentTest(unittest.TestCase):
     def test_grade_b_plus(self):
         self.assertEqual(Student("John", 75).get_grade(), "B+")
 
+    def test_grade_b(self):
+        self.assertEqual(Student("John", 70).get_grade(), "B")
+
 
 unittest.main()
