@@ -21,7 +21,9 @@ class Student:
             return "D+"
         if self.score >= 50:
             return "D"
-        return "F"
+        if self.score >= 0:
+            return "F"
+        return Exception("Invalid Score")
 
 
 assert str(Student("John", 80)) == "John"
@@ -35,4 +37,3 @@ assert Student("John", 55).get_grade() == "D+"
 assert Student("John", 50).get_grade() == "D"
 
 assert Student("John", 49).get_grade() == "F"
-assert Student("John", -1).get_grade() == "F"
