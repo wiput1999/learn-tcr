@@ -40,6 +40,9 @@ class StudentTest(unittest.TestCase):
     def test_grade_b(self):
         self.assertEqual(Student("John", 70).get_grade(), "B")
 
+    def test_grade_c_plus(self):
+        self.assertEqual(Student("John", 65).get_grade(), "C+")
+
     def test_score_error_high(self):
         with self.assertRaises(Exception) as context:
             Student("John", 101)
