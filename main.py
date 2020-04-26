@@ -44,3 +44,7 @@ try:
 except Exception:
     pass
 
+try:
+    Student("John", -1)
+except Exception:
+    pass
