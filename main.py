@@ -38,3 +38,9 @@ assert Student("John", 55).get_grade() == "D+"
 assert Student("John", 50).get_grade() == "D"
 
 assert Student("John", 49).get_grade() == "F"
+
+try:
+    Student("John", 101)
+except Exception:
+    pass
+
