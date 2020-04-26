@@ -30,29 +30,6 @@ class Student:
             return "F"
 
 
-assert str(Student("John", 80)) == "John"
-
-assert Student("John", 80).get_grade() == "A"
-assert Student("John", 79).get_grade() == "B+"
-assert Student("John", 70).get_grade() == "B"
-assert Student("John", 65).get_grade() == "C+"
-assert Student("John", 60).get_grade() == "C"
-assert Student("John", 55).get_grade() == "D+"
-assert Student("John", 50).get_grade() == "D"
-
-assert Student("John", 49).get_grade() == "F"
-
-try:
-    Student("John", 101)
-except Exception:
-    pass
-
-try:
-    Student("John", -1)
-except Exception:
-    pass
-
-
 class StudentTest(unittest.TestCase):
     def test_grade_a(self):
         self.assertEqual(Student("John", 80).get_grade(), "A")
