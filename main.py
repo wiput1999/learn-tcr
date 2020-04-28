@@ -9,7 +9,7 @@ class Student:
         self.score = score
 
     def __str__(self):
-        return self.name
+        return "%s %d".format(self.name, self.score)
 
     def get_grade(self):
         if self.score >= 80:
