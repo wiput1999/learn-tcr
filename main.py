@@ -30,6 +30,10 @@ class Student:
             return "F"
 
 
+class StudentCollection:
+    pass
+
+
 class StudentTest(unittest.TestCase):
     def test_grade_a(self):
         self.assertEqual(Student("John", 80).get_grade(), "A")
