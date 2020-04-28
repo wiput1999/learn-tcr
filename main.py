@@ -71,4 +71,12 @@ class StudentTest(unittest.TestCase):
         self.assertTrue(context.exception)
 
 
+class StudentCollectionTest(unittest.TestCase):
+    def setUp(self):
+        self.student_collection = StudentCollection()
+
+    def test_get_student_blank(self):
+        self.assertEqual(self.student_collection.get_students(), [])
+
+
 unittest.main()
