@@ -31,7 +31,8 @@ class Student:
 
 
 class StudentCollection:
-    pass
+    def __init__(self):
+        self.students = []
 
 
 class StudentTest(unittest.TestCase):
