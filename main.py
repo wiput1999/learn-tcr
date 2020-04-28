@@ -84,7 +84,7 @@ class StudentCollectionTest(unittest.TestCase):
     def test_add_student_one(self):
         student = Student("Alex", 80)
         self.student_collection.add_student(student)
-        self.assertEqual(self.student_collection.get_student(0), student)
+        self.assertEqual(str(self.student_collection.get_student(0)), str(student))
 
 
 unittest.main()
