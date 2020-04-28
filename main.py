@@ -34,6 +34,12 @@ class StudentCollection:
     def __init__(self):
         self.students = []
 
+    def add_student(self, student):
+        self.students.append(student)
+
+    def get_students(self):
+        return self.students
+
 
 class StudentTest(unittest.TestCase):
     def test_grade_a(self):
